@@ -1,14 +1,15 @@
 //
 //  NSString+ContainerSize.h
-//  Conductor
 //
 //  Created by Michael Robinson on 6/03/12.
-//  Copyright (c) 2012 Realmac Software. All rights reserved.
+//
+//  Based on the Stack Overflow answer: http://stackoverflow.com/a/1993376/187954
 //
 
 #import <Foundation/Foundation.h>
 
 @interface NSString (Size)
+
 
 - (NSSize) sizeWithWidth:(float)width andFont:(NSFont *)font;
 
