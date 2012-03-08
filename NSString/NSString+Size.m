@@ -14,9 +14,9 @@
     
     NSSize size = NSMakeSize(width, FLT_MAX);
     
-    NSTextStorage *textStorage = [[[NSTextStorage alloc] initWithString:self] autorelease];
-    NSTextContainer *textContainer = [[[NSTextContainer alloc] initWithContainerSize:size] autorelease];
-    NSLayoutManager *layoutManager = [[[NSLayoutManager alloc] init] autorelease];
+    NSTextStorage *textStorage = [[[NSTextStorage alloc] initWithString:self] retain];
+    NSTextContainer *textContainer = [[[NSTextContainer alloc] initWithContainerSize:size] retain];
+    NSLayoutManager *layoutManager = [[[NSLayoutManager alloc] init] retain];
     [layoutManager addTextContainer:textContainer];
     [textStorage addLayoutManager:layoutManager];
     [textStorage addAttribute:NSFontAttributeName value:font
@@ -29,7 +29,7 @@
     
     [layoutManager release];
     [textContainer release];
-    [textStorage release];    
+    [textStorage release]; 
     
     return size;
 }
