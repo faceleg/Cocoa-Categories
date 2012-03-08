@@ -7,7 +7,7 @@ Adds `- (NSSize) sizeWithWidth:(float)width andFont:(NSFont *)font;` method to N
 ## NSColor+Hex
 Adds the following:
 
-```Objective C
+```ObjectiveC
 + (NSColor *) colorWithHex:(NSString *)hexColor;
 
 - (NSString *) hexColor;
