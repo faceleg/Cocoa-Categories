@@ -42,9 +42,8 @@ Example:
 
 More info:
 
-- [User Feedback & the NSPopover](http://12412.org/2012/03/user-feedback-simplifying-the-nspopover/ "User Feedback & the NSPopover")
 - [Resizing NSTextField to Fit Content](http://pagesofinterest.net/blog/2012/03/resizing-nstextfield-to-fit-content/ "Resizing NSTextField to Fit Content")
-
+- [User Feedback & the NSPopover](http://12412.org/2012/03/user-feedback-simplifying-the-nspopover/ "User Feedback & the NSPopover")
 
 ## NSSplitView+Animation
 
