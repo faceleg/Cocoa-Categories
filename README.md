@@ -24,7 +24,7 @@ Adds the class method:
 + (void) showRelativeToRect:(NSRect)rect
                      ofView:(NSView *)view
               preferredEdge:(NSRectEdge)edge
-                     string:(NSString *)string   
+                     string:(NSString *)string
                    maxWidth:(float)width;
 ```
 
@@ -39,3 +39,7 @@ Example:
                        string:@"Your message - the NSPopover will be as tall as required depending on your given maxWidth"
                      maxWidth:200.0];
 ```
+
+## NSSplitView+Animation
+
+Adds `- (void) animateView:(int)viewIndex toDimension:(CGFloat)dimension` method to NSSplitViews. Animates the split view panels such that the view at viewIndex has the width or height dimension. Note that animating a panel to zero width or height will cause it to 'disappear', and such a panel will not animate again. Animating a panel to no less than 1 pixel wide or high is sufficient to make the panel appear hidden.

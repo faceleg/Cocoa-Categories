@@ -11,7 +11,8 @@
 @implementation NSSplitView (Animation)
 
 /**
- * Animate the split view panels such that the view at viewIndex has the width or height dimension
+ * Animate the split view panels such that the view at viewIndex has the width or height dimension. 
+ * Note that animating a panel to zero width or height will cause it to 'disappear', and such a panel will not animate again. Animating to no less than 1 pixel wide or high is sufficient to make a panel appear hidden.
  * @param viewIndex The index of the view to animate to dimension wide or high
  * @param dimension The width or height, depending on whether the NSSplitView is horizontally or vertically split, to animate to
  */
