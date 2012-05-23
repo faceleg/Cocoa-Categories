@@ -2,7 +2,7 @@
 //  NSColor+Hex.h
 //
 //  Created by Michael Robinson on 4/12/11.
-//  Copyright 2011 Code of Interest. All rights reserved.
+//  License: http://pagesofinterest.net/license/
 //
 
 #import <AppKit/AppKit.h>
