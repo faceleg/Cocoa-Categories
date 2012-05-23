@@ -3,7 +3,7 @@
 //  Conductor
 //
 //  Created by Michael Robinson on 23/05/12.
-//  License: http://pagesofinterest.net/license/oftware. All rights reserved.
+//  License: http://pagesofinterest.net/license/oftware.
 //
 
 #import <Foundation/Foundation.h>
