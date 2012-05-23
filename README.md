@@ -1,6 +1,8 @@
 # Cocoa Categories
 A collection of Cocoa categories I've found useful.
 
+For the most recent license, see [Cocoa Categories License](http://pagesofinterest.net/license/).
+
 ## NSString+Size
 Adds `- (NSSize) sizeWithWidth:(float)width andFont:(NSFont *)font;` method to NSStrings. Returns the width and height of a box that would contain the rendered string with the given width & font.
 
@@ -48,3 +50,13 @@ More info:
 ## NSSplitView+Animation
 
 Adds `- (void) animateView:(int)viewIndex toDimension:(CGFloat)dimension` method to NSSplitViews. Animates the split view panels such that the view at `viewIndex` has the pixel width or height of `dimension`. Note that animating a panel to zero width or height will cause it to 'disappear', and such a panel will not animate again. Animating a panel to no less than 1 pixel wide or high is sufficient to make the panel appear hidden.
+
+
+## NSObject+VariableArgumentPerformSelector
+
+Adds `- (void) performSelector:(SEL)aSelector withObjects:(NSObject *)firstObject, ...` to NSObjects, which allows one to more conveniently perform selectors that require more than two arguments.
+
+```ObjectiveC
+[object performSelector:@selector(selectorRequiringFourArguments:first:second:third:fourth)
+            withObjects:first, second, third, fourth, nil];
+```
